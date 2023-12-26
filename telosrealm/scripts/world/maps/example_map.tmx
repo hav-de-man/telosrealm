@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="5" nextobjectid="19">
+ <editorsettings>
+  <export target="example_map.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../tilesets/example_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4,5,6,7,8,9,10,11,5,6,7,8,12,0,0,
+0,94,136,81,136,81,81,63,81,81,81,81,81,120,0,0,
+0,76,81,113,81,113,81,113,136,113,81,81,63,120,0,0,
+0,94,81,81,63,63,81,81,136,81,63,63,81,120,0,0,
+0,130,81,63,113,81,81,81,136,113,81,63,81,120,0,0,
+0,76,81,63,81,63,81,136,81,113,136,81,81,120,0,0,
+0,148,149,149,152,152,152,149,152,152,152,152,152,156,0,0,
+0,166,167,168,169,170,171,172,173,170,171,172,173,174,0,0,
+0,184,185,186,187,188,189,190,191,188,189,190,191,192,0,0,
+0,202,203,204,205,206,207,208,209,206,207,208,209,210,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup color="#0000ff" id="3" name="collision">
+  <object id="9" x="40" y="0" width="520" height="40"/>
+  <object id="10" x="0" y="40" width="40" height="280"/>
+  <object id="11" x="560" y="40" width="40" height="280"/>
+  <object id="12" x="40" y="320" width="520" height="40"/>
+ </objectgroup>
+ <objectgroup color="#ff00e9" id="4" name="objects">
+  <object id="13" name="chest" x="480" y="160">
+   <properties>
+    <property name="money" value="999"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="interactable" x="40" y="320" width="520" height="40">
+   <properties>
+    <property name="cutscene" value="examples.wantChest"/>
+   </properties>
+  </object>
+  <object id="15" name="chest" x="299.211" y="462.584">
+   <properties>
+    <property name="money" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="enemy" x="400" y="200" width="40" height="40">
+   <properties>
+    <property name="actor" value="dummy"/>
+    <property name="encounter" value="dummy"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#6f00ff" id="2" name="markers">
+  <object id="1" name="spawn" x="100.349" y="182.953">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
